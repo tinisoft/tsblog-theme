@@ -1,4 +1,5 @@
 <header class="profile">
+    <div class="header-container">
     {{ if .Site.Params.avatarLink }}
         <a href="{{ .Site.Params.avatarLink }}">
           <img class="avatar" alt="avatar" src="{{ "/images/avatar.png" | relURL }}" />
@@ -6,10 +7,13 @@
     {{ else }}
         <img class="avatar" alt="avatar" src="{{ "/images/avatar.png" | relURL }}" />
     {{ end }}
-
+    <div>
     <h1>{{ .Site.Title }}</h1>
     
     {{ with .Site.Params.Bio }}
       <h2>{{ . | markdownify }}</h2>
     {{ end }}
+    </div>
+    </div>
+    {{ partial "navigation.html" . }}
 </header>
