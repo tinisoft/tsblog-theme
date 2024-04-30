@@ -117,7 +117,6 @@ h4:hover a {
   overflow-x: auto;
 }
 p code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
   background-color: rgba(0, 0, 0, 0.06);
   padding: 0 2px;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -127,8 +126,7 @@ p code {
   text-indent: 0;
 }
 pre code {
-  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-  font-size: 12;
+  font-size: 11;
 }
 
 
